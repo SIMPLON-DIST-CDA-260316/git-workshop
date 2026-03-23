@@ -47,6 +47,6 @@ commit-msg:
       run: npx commitlint --edit {1}
 
 pre-commit:
-  jobs:
-    - name: linter guard
+  commands:
+    lint:
       run: npm run lint
